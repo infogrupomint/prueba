@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Comida Rápida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Tienda de Comida Rápida</h1>
+    </header>
+
+    <section id="productos">
+        <!-- Aquí se mostrarán los productos -->
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+            <!-- Aquí se mostrarán los productos agregados al carrito -->
+        </ul>
+        <button onclick="irAPasoSiguiente()">Ir al Siguiente Paso</button>
+    </section>
+
+    <section id="paso-siguiente" style="display: none;">
+        <h2>¿Cómo desea recibir su pedido?</h2>
+        <button onclick="finalizarPedido('retiro')">Retirar en el Negocio</button>
+        <button onclick="finalizarPedido('domicilio')">Entrega a Domicilio</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tu Tienda de Comida Rápida</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
